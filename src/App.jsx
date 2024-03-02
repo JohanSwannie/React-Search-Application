@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Table from "react-bootstrap/Table";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
@@ -12,12 +12,15 @@ function App() {
   return (
     <div>
       <Container>
-        <h1 className="text-center mt-4 bg-red-950">Contact Keeper</h1>
+        <h1 className="text-center mt-4 h-5 text-white bg-red-950">
+          List of People
+        </h1>
         <Form>
           <InputGroup className="my-3">
             <Form.Control
+              className="border-12 border-red-400"
               onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search contacts"
+              placeholder="Search people"
             />
           </InputGroup>
         </Form>
