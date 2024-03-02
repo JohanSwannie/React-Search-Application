@@ -17,6 +17,7 @@ function App() {
             <Form.Control
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search people"
+              className="placeholder-gray-950 placeholder-opacity-35"
             />
           </InputGroup>
         </Form>
