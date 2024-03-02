@@ -12,13 +12,11 @@ function App() {
   return (
     <div>
       <Container>
-        <h1 className="text-center mt-4 h-5 text-white bg-red-950">
-          List of People
-        </h1>
+        <h1 className="text-center text-3xl mt-2 mb-8 h-5">List of People</h1>
         <Form>
           <InputGroup className="my-3">
             <Form.Control
-              className="border-12 border-red-400"
+              className="border-2 border-blue-950"
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search people"
             />
