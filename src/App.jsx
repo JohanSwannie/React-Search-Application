@@ -13,7 +13,7 @@ function App() {
           List of People
         </h1>
         <Form>
-          <InputGroup className="my-3">
+          <InputGroup className="my-2">
             <Form.Control
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search people"
