@@ -1,9 +1,6 @@
 import { useState } from "react";
-import Table from "react-bootstrap/Table";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container, Form, InputGroup, Table } from "react-bootstrap";
 import { data } from "./data.js";
 
 function App() {
@@ -11,18 +8,19 @@ function App() {
 
   return (
     <div>
-      <Container>
-        <h1 className="text-center text-3xl mt-2 mb-8 h-5">List of People</h1>
+      <Container className="bg-slate-700 border-2 border-slate-950">
+        <h1 className="text-center text-3xl text-white mt-2 mb-8 h-5">
+          List of People
+        </h1>
         <Form>
           <InputGroup className="my-3">
             <Form.Control
-              className="border-2 border-blue-950"
               onChange={(e) => setSearch(e.target.value)}
               placeholder="Search people"
             />
           </InputGroup>
         </Form>
-        <Table striped bordered hover>
+        <Table striped bordered hover className="border-2 border-slate-300">
           <thead>
             <tr>
               <th>First Name</th>
